@@ -28,7 +28,7 @@ variable "secret_key" {
 
 variable "app_name" {
   type        = string
-  default     = "test"
+  default     = "realworld"
   description = "Application name for which you want to setup the infra"
 }
 

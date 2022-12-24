@@ -82,7 +82,7 @@ module "service_backend" {
   kms_alias_arn                  = module.base_infra.kms_alias_arn
   repo_owner                     = "arunggh"
   repo_name                      = "back-end-express-bookshelf-realworld"
-  branch_name                    = "master"
+  branch_name                    = "main"
   github_token                   = var.Git_Token
   task_environment_variables = [
     {
@@ -161,8 +161,8 @@ module "service_frontend" {
   bucket_location                = module.base_infra.bucket_location
   kms_alias_arn                  = module.base_infra.kms_alias_arn
   repo_owner                     = "arunggh"
-  repo_name                      = "angular-realworld-example-app"
-  branch_name                    = "master"
+  repo_name                      = "front-end-angular-realworld"
+  branch_name                    = "main"
   github_token                   = var.Git_Token
   task_environment_variables = [
     {
